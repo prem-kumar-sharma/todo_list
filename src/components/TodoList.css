@@ -1,0 +1,53 @@
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-row.complete {
+  text-decoration: line-through;
+  background-color: #d1f7d6;
+  transform: scale(0.98);
+}
+
+.task-text {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-text.completed {
+  color: #6c757d;
+}
+
+.delete-icon {
+  color: #ff6b6b;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate {
+  animation: slideIn 0.5s ease;
+}
