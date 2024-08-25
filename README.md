@@ -1,6 +1,4 @@
-# Create the README.md content
-readme_content = """
-# Getting Started with Your Custom To-Do App
+# To-Do App
 
 This project was built using [Create React App](https://github.com/facebook/create-react-app) with additional features and custom styling.
 
